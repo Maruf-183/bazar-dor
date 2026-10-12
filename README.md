@@ -1,31 +1,34 @@
 # বাজার দর (BazarDor)
 
-বাজার দর একটি বাংলাদেশি দৈনন্দিন প্রয়োজনীয় পণ্যের দাম ট্র্যাকিং ওয়েবসাইট। এতে প্রতিদিনের বাজারদর, ডেল্টা, ক্যাটাগরি ফিল্টার এবং সুরক্ষিত পণ্য ডিটেইল একসাথে দেখা যায়।
+BazarDor is a Bangladeshi website for tracking the daily prices of essential goods. It shows today's market prices, changes from yesterday, category filters, and a protected product details page with market-wise prices in one place.
 
-Live: (deploy করার পর যোগ হবে)
+Live: (will be added after deployment)
 
-## প্রযুক্তি
+## Technologies
 
-- Next.js
+- Next.js (App Router)
 - Tailwind CSS
 - BetterAuth
 - MongoDB
 - react-hot-toast
 
-## মূল বৈশিষ্ট্য
+## Key Features
 
-1. লাইভ প্রাইস টিকার
-2. দাম বেড়েছে ও কমেছে এমন পণ্য তালিকা
-3. ক্যাটাগরি অনুযায়ী ফিল্টার ও সাজানো
-4. বাজারভিত্তিক দাম টেবিল
-5. ইমেইল, Google, GitHub সাইন-ইন
-6. সুরক্ষিত পণ্য ডিটেইল ও প্রোফাইল আপডেট
+1. Live price ticker
+2. Separate lists of products whose prices went up and down today
+3. Category filter with price sorting
+4. Market-wise price table for each product
+5. Sign in with email, Google, or GitHub
+6. Protected product details and profile name update
 
-## লোকাল রান করার নিয়ম
+## Running Locally
 
-1. Dependency ইন্সটল করুন:
+1. Install dependencies:
+
    npm install
-2. `.env.local` ফাইলে নিচের ভেরিয়েবল নেম যোগ করুন, মান লিখতে হবে:
+
+2. Create a `.env.local` file and add the following environment variables with your own values:
+
    - MONGODB_URI
    - BETTER_AUTH_SECRET
    - BETTER_AUTH_URL
@@ -33,7 +36,11 @@ Live: (deploy করার পর যোগ হবে)
    - GOOGLE_CLIENT_SECRET
    - GITHUB_CLIENT_ID
    - GITHUB_CLIENT_SECRET
-3. ডেভ সার্ভার চালু করুন:
+
+3. Start the development server:
+
    npm run dev
-4. ব্রাউজারে খুলুন:
+
+4. Open in your browser:
+
    http://localhost:3000
