@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand: #078a41;
+  --color-brand-dark: #066c34;
+  --color-page: #f1f5ef;
+  --color-card: #fcfdfc;
+  --color-line: #e3e8e1;
+  --color-ink: #16201a;
+  --color-muted: #6b756e;
+  --color-up: #d6322a;
+  --color-up-bg: #fdeeed;
+  --color-down: #0b8a43;
+  --color-down-bg: #e8f5ec;
+  --color-flat: #5f6762;
+  --color-flat-bg: #eef0ee;
+  --font-sans: var(--font-hind-siliguri);
+  --font-mono: "SFMono-Regular", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f1f5ef;
+  color: #16201a;
+  font-family: var(--font-hind-siliguri), Arial, sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker 60s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
