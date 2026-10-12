@@ -43,4 +43,4 @@ Live: (will be added after deployment)
 
 4. Open in your browser:
 
-   http://localhost:3000
+   https://bazar-dor-maruf183.vercel.app
