@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# বাজার দর (BazarDor)
 
-## Getting Started
+বাজার দর একটি বাংলাদেশি দৈনন্দিন প্রয়োজনীয় পণ্যের দাম ট্র্যাকিং ওয়েবসাইট। এতে প্রতিদিনের বাজারদর, ডেল্টা, ক্যাটাগরি ফিল্টার এবং সুরক্ষিত পণ্য ডিটেইল একসাথে দেখা যায়।
 
-First, run the development server:
+Live: (deploy করার পর যোগ হবে)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## প্রযুক্তি
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js
+- Tailwind CSS
+- BetterAuth
+- MongoDB
+- react-hot-toast
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## মূল বৈশিষ্ট্য
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. লাইভ প্রাইস টিকার
+2. দাম বেড়েছে ও কমেছে এমন পণ্য তালিকা
+3. ক্যাটাগরি অনুযায়ী ফিল্টার ও সাজানো
+4. বাজারভিত্তিক দাম টেবিল
+5. ইমেইল, Google, GitHub সাইন-ইন
+6. সুরক্ষিত পণ্য ডিটেইল ও প্রোফাইল আপডেট
 
-## Learn More
+## লোকাল রান করার নিয়ম
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Dependency ইন্সটল করুন:
+   npm install
+2. `.env.local` ফাইলে নিচের ভেরিয়েবল নেম যোগ করুন, মান লিখতে হবে:
+   - MONGODB_URI
+   - BETTER_AUTH_SECRET
+   - BETTER_AUTH_URL
+   - GOOGLE_CLIENT_ID
+   - GOOGLE_CLIENT_SECRET
+   - GITHUB_CLIENT_ID
+   - GITHUB_CLIENT_SECRET
+3. ডেভ সার্ভার চালু করুন:
+   npm run dev
+4. ব্রাউজারে খুলুন:
+   http://localhost:3000
